@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future You: Career Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><span class="highlight">Future You:</span> Career Simulator</h1>
+            <p class="tagline">Discover your path to success</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro" class="active-section">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>Welcome to Your Future</h2>
+                        <p>Explore different career paths based on your interests and see where they might lead you.
+                            Choose a major to begin your journey.</p>
+                        <button id="start-btn" class="btn-primary">Start Your Journey</button>
+                    </div>
+                    <div class="intro-image">
+                        <img src="img/career.png" alt="Career paths illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="major-selection" class="hidden-section">
+            <div class="container">
+                <h2>Choose Your Major</h2>
+                <p>Select a field of study to explore potential career paths</p>
+
+                <div class="majors-grid">
+                    <div class="major-card" data-major="computer-science">
+                        <div class="major-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Computer Science</h3>
+                        <p>Explore the world of programming, algorithms, and digital innovation</p>
+                        <button class="btn-select">Select</button>
+                    </div>
+
+                    <div class="major-card" data-major="business">
+                        <div class="major-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Business Administration</h3>
+                        <p>Learn about management, marketing, finance, and entrepreneurship</p>
+                        <button class="btn-select">Select</button>
+                    </div>
+
+                    <div class="major-card" data-major="healthcare">
+                        <div class="major-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Healthcare</h3>
+                        <p>Discover careers in medicine, nursing, and allied health professions</p>
+                        <button class="btn-select">Select</button>
+                    </div>
+
+                    <div class="major-card" data-major="engineering">
+                        <div class="major-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Engineering</h3>
+                        <p>Build the future through mechanical, electrical, or civil engineering</p>
+                        <button class="btn-select">Select</button>
+                    </div>
+
+                    <div class="major-card" data-major="arts">
+                        <div class="major-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Arts & Design</h3>
+                        <p>Express yourself through visual arts, design, music, or performance</p>
+                        <button class="btn-select">Select</button>
+                    </div>
+
+                    <div class="major-card" data-major="education">
+                        <div class="major-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Education</h3>
+                        <p>Shape the future generations through teaching and educational leadership</p>
+                        <button class="btn-select">Select</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="career-path" class="hidden-section">
+            <div class="container">
+                <div class="back-button"><i class="fas fa-arrow-left"></i> Back to Majors</div>
+                <div id="major-details">
+                    <!-- Content will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="job-details" class="hidden-section">
+            <div class="container">
+                <div class="back-button"><i class="fas fa-arrow-left"></i> Back to Careers</div>
+                <div id="job-content">
+                    <!-- Content will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="chatbot-container">
+        <div id="chatbot-header">
+            <h3>Career Advisor <i class="fas fa-robot"></i></h3>
+            <button id="toggle-chat"><i class="fas fa-chevron-up"></i></button>
+        </div>
+        <div id="chatbot-body">
+            <div id="chat-messages">
+                <div class="bot-message">
+                    <p>Hi there! I'm your Career Advisor. Ask me anything about careers, majors, or job prospects!</p>
+                </div>
+            </div>
+            <div id="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type your question here...">
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Future You: Career Simulator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>
