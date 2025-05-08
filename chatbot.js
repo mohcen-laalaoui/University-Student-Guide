@@ -1,4 +1,3 @@
-// Chatbot functionality
 const chatbotHeader = document.getElementById("chatbot-header");
 const chatbotBody = document.getElementById("chatbot-body");
 const chatInput = document.getElementById("chat-input");
@@ -19,7 +18,6 @@ toggleChatBtn.addEventListener("click", () => {
   isChatOpen = !isChatOpen;
 });
 
-// Send message functionality
 function sendMessage() {
   const message = chatInput.value.trim();
   if (message === "") return;
@@ -122,7 +120,6 @@ chatInput.addEventListener("keypress", (e) => {
   }
 });
 
-// Add initial welcome message
 setTimeout(() => {
   addMessage(
     "Hi there! I'm your Career Advisor. Ask me anything about careers, majors, or job prospects!",

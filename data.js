@@ -3,7 +3,8 @@ const majorsData = {
   "computer-science": {
     id: "computer-science",
     title: "Computer Science",
-    description: "A field for problem-solvers who love technology.",
+    description:
+      "Computer Science is the study of computers and computational systems, focusing on how they work, how they are used, and how to design software and hardware to solve problems efficiently.",
     image: "img/cs.jpg",
     video: {
       url: "https://www.youtube.com/watch?v=i6F7seJWxyQ",
@@ -59,7 +60,8 @@ const majorsData = {
   healthcare: {
     id: "healthcare",
     title: "Healthcare",
-    description: "A caring profession focused on patient care.",
+    description:
+      "Healthcare for students refers to the medical and wellness services provided to help students stay healthy, including regular check-ups, vaccinations, mental health support, and treatment for illness or injury, often offered through school or university clinics..",
     image: "img/health.jpg",
     video: {
       url: "https://www.youtube.com/watch?v=KVehf8hyufs",
